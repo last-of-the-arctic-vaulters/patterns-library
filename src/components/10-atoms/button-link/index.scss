@@ -19,13 +19,15 @@
     @include _text(default)
   }
 
-  &:hover,
-  &:active,
-  &:focus {
-    cursor: pointer;
-    text-decoration: none;
-    background-color: $color-prim-blue-deep-sapphire;
-    border-color: $color-prim-blue-deep-sapphire;
+  @media (hover: hover) {
+    &:hover,
+    &:active,
+    &:focus {
+      cursor: pointer;
+      text-decoration: none;
+      background-color: $color-prim-blue-deep-sapphire;
+      border-color: $color-prim-blue-deep-sapphire;
+    }
   }
 
   &[aria-disabled="true"] {
@@ -113,14 +115,16 @@
     background-color: $color-prim-blue-deep-sapphire;
   }
 
-  &:hover,
-  &:focus {
-    background-color: $color-axa-blue;
-    color: $color-prim-white;
+  @media (hover: hover) {
+    &:hover,
+    &:focus {
+      background-color: $color-axa-blue;
+      color: $color-prim-white;
 
-    &::after {
-      width: 110%;
-      background-color: $color-prim-blue-deep-sapphire;
+      &::after {
+        width: 110%;
+        background-color: $color-prim-blue-deep-sapphire;
+      }
     }
   }
 }
@@ -129,12 +133,14 @@
   background-color: $color-prim-red-burnt-sienna;
   border-color: $color-prim-red-burnt-sienna;
   border-bottom-color: $color-prim-red-flamingo;
-
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: $color-prim-red-flamingo;
-    border-color: $color-prim-red-flamingo;
+  
+  @media (hover: hover) {
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $color-prim-red-flamingo;
+      border-color: $color-prim-red-flamingo;
+    }
   }
 
   &.a-button-link--motion {
@@ -142,13 +148,15 @@
       background-color: $color-prim-red-flamingo;
     }
 
-    &:hover,
-    &:focus {
-      background-color: $color-prim-red-burnt-sienna;
-      color: $color-prim-white;
+    @media (hover: hover) {
+      &:hover,
+      &:focus {
+        background-color: $color-prim-red-burnt-sienna;
+        color: $color-prim-white;
 
-      &::after {
-        background-color: $color-prim-red-flamingo;
+        &::after {
+          background-color: $color-prim-red-flamingo;
+        }
       }
     }
   }
@@ -159,14 +167,16 @@
   border-bottom-color: $color-axa-blue;
   color: $color-axa-blue;
 
-  &:hover,
-  &:active,
-  &:focus {
-    color: $color-prim-white;
-  }
+  @media (hover: hover) {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-prim-white;
+    }
 
-  &.a-button-link--motion {
-    background-color: transparent;
+    &.a-button-link--motion {
+      background-color: transparent;
+    }
   }
 }
 
@@ -175,12 +185,14 @@
   border-color: $color-prim-white;
   color: $color-prim-white;
 
-  &:hover,
-  &:active,
-  &:focus {
-    color: $color-prim-blue-deep-sapphire;
-    background-color: $color-prim-white;
-    border-color: $color-prim-white;
+  @media (hover: hover) {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-prim-blue-deep-sapphire;
+      background-color: $color-prim-white;
+      border-color: $color-prim-white;
+    }
   }
 
   &.a-button-link--motion {
@@ -193,10 +205,12 @@
 }
 
 @mixin inverted-color($color) {
-  &:hover,
-  &:active,
-  &:focus {
-    color: $color;
+  @media (hover: hover) {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color;
+    }
   }
 }
 
