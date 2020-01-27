@@ -15,7 +15,7 @@ story.add('to Pattern Library', () => {
   const wrapper = document.createElement('div');
 
   const template = html`
-    <axa-heading rank="3">Besserer Titel!!!!!!</axa-heading>
+    <axa-heading rank="3">asd Titel!!!!!!</axa-heading>
     <axa-text variant="size-3">
       You can find all our Webcomponents here. Check out our Readme below.
     </axa-text>
