@@ -4,7 +4,7 @@ import Readme from '../../../README.md';
 import '../../components/10-atoms/text';
 import '../../components/10-atoms/heading';
 
-const story = storiesOf('Welcome', module);
+const story = storiesOf('Overview|Welcome', module);
 story.addParameters({
   readme: {
     sidebar: Readme,
