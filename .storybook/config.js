@@ -19,6 +19,7 @@ addParameters({
       brandUrl: 'https://github.com/axa-ch/patterns-library/tree/develop',
       brandImage: logo,
     }),
+    showPanel: true,
   },
 });
 
