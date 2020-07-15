@@ -15,6 +15,7 @@ story.add('Welcome', () => {
   const wrapper = document.createElement('div');
 
   const template = html`
+  <axa-container>
     <axa-heading rank="1">AXA’s Design System 🚀</axa-heading>
     <axa-text variant="size-3">
       Welcome to the Design System of AXA Switzerland. Our Pattern Library
@@ -23,7 +24,7 @@ story.add('Welcome', () => {
     </axa-text>
     <axa-commercial-hero-banner
       variant="light"
-      imagesource="https://drive.google.com/uc?export=view&id=1CZAbIBfCiH0aRhMoFtpOT4wXCLSxnY-1"
+  
     >
       <header slot="title">
         <p>HAVE A PERFECT START</p>
@@ -33,8 +34,8 @@ story.add('Welcome', () => {
         Check out our introduction guide on our guidelines, components and key
         concepts
       </p>
-      <div slot="button">
-        <axa-button-link href="https://axa.ch" variant="" size="large"
+      <div slot="button" style="display:flex;">
+        <axa-button-link href="https://axa.ch" variant="" size="large" style="padding-right:25px;"
           >GET STARTED</axa-button-link
         >
         <axa-button-link
@@ -46,7 +47,9 @@ story.add('Welcome', () => {
         >
       </div>
     </axa-commercial-hero-banner>
+    
     <axa-heading rank="2">Last releases</axa-heading>
+    </axa-container>
     <section class="PageCallToAction">
       <div class="PageCallToAction-inner">
         <div>
@@ -64,12 +67,17 @@ story.add('Welcome', () => {
 .landingpage-questions-subtitle {
     text-transform: uppercase;
     overflow-wrap: break-word;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
 }
 
 .PageCallToAction {
     padding: 20px 40px;
     background-color: #333;
     color: #fff;
+    width: auto;
 }
   
 .PageCallToAction-inner {
@@ -77,10 +85,12 @@ story.add('Welcome', () => {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 960px;
+    
 }</style>
   `;
 
   render(template, wrapper);
   return wrapper;
 });
+story.add('Getting started', () => {});
+story.add('Structure approach', () => {});
