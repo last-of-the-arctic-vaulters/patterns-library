@@ -2,6 +2,9 @@ import { storiesOf } from '@storybook/html';
 import { html, render } from 'lit-html';
 import '../../components/10-atoms/text';
 import '../../components/10-atoms/heading';
+import styles from './index.scss';
+
+// imagesource="https://drive.google.com/uc?export=view&id=1CZAbIBfCiH0aRhMoFtpOT4wXCLSxnY-1"
 
 const story = storiesOf('Overview|Introduction', module);
 story.addParameters({
@@ -15,6 +18,7 @@ story.add('Welcome', () => {
   const wrapper = document.createElement('div');
 
   const template = html`
+  <style>${styles}</style>
   <axa-container>
     <axa-heading rank="1">AXA’s Design System 🚀</axa-heading>
     <axa-text variant="size-3">
@@ -47,6 +51,7 @@ story.add('Welcome', () => {
         >
       </div>
     </axa-commercial-hero-banner>
+    <img src="https://drive.google.com/uc?export=view&id=1CZAbIBfCiH0aRhMoFtpOT4wXCLSxnY-1" class="landingpage-image"><img>
     
     <axa-heading rank="2">Last releases</axa-heading>
     </axa-container>
@@ -61,32 +66,6 @@ story.add('Welcome', () => {
         >
       </div>
     </section>
-    
-    <style>
-    
-.landingpage-questions-subtitle {
-    text-transform: uppercase;
-    overflow-wrap: break-word;
-    font-family: 'Source Sans Pro', Arial, sans-serif;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.02em;
-}
-
-.PageCallToAction {
-    padding: 20px 40px;
-    background-color: #333;
-    color: #fff;
-    width: auto;
-}
-  
-.PageCallToAction-inner {
-    padding-left: 96px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}</style>
   `;
 
   render(template, wrapper);
