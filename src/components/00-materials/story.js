@@ -38,7 +38,7 @@ const mapToIconItem = icon => {
     </div>`;
 };
 
-storiesOf('Materials', module)
+storiesOf('Brand Identity Elements|Icons and Images', module)
   .addDecorator(withKnobs)
   .addParameters({
     readme: {

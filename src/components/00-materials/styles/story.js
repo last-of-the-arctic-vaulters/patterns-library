@@ -57,7 +57,7 @@ $color-malachite: #1cc54e !default;
 $color-shy-tomato: #c91432 !default;
 `;
 
-storiesOf('Materials', module)
+storiesOf('Brand Identity Elements|Colors', module)
   .addDecorator(withKnobs)
   .addParameters({
     readme: {
