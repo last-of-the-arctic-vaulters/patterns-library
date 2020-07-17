@@ -12,7 +12,7 @@ import policyFeatures from './policy-features';
 import navbar from './navbar';
 import footerSmall from './footer-small';
 
-const story = storiesOf('Pages|AXA', module);
+const story = storiesOf('Pages', module);
 story.addDecorator(withKnobs);
 story.addParameters({
   readme: {
@@ -41,7 +41,7 @@ function drawOrRemoveBorderAroundElements(shouldDrawBorder, elements) {
   }
 }
 
-story.add('Main Page', () => {
+story.add('AXA Main Page', () => {
   const markWebcomponents = boolean('Highlight AXA Webcomponents', false);
   const wrapper = document.createElement('div');
 
