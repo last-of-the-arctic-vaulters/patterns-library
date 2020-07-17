@@ -12,7 +12,7 @@ import policyFeatures from './policy-features';
 import navbar from './navbar';
 import footerSmall from './footer-small';
 
-const story = storiesOf('Pages', module);
+const story = storiesOf('Showcases', module);
 story.addDecorator(withKnobs);
 story.addParameters({
   readme: {
