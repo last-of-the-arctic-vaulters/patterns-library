@@ -38,7 +38,7 @@ story.add('Welcome', () => {
         Check out our introduction guide on our guidelines, components and key
         concepts
       </p>
-      <div slot="button" style="display:flex;">
+      <div class="landingpage-commerical-hero-banner-button-wrapper" slot="button">
         <axa-button-link href="https://axa.ch" variant="" size="large" style="padding-right:25px;"
           >GET STARTED</axa-button-link
         >
@@ -51,14 +51,13 @@ story.add('Welcome', () => {
         >
       </div>
     </axa-commercial-hero-banner>
-    <img src="https://drive.google.com/uc?export=view&id=1CZAbIBfCiH0aRhMoFtpOT4wXCLSxnY-1" class="landingpage-image"><img>
-    
+    <img class="landingpage-commercial-hero-banner-image" src="https://drive.google.com/uc?export=view&id=1CZAbIBfCiH0aRhMoFtpOT4wXCLSxnY-1"><img>
     <axa-heading rank="2">Last releases</axa-heading>
     </axa-container>
-    <section class="PageCallToAction">
-      <div class="PageCallToAction-inner">
+    <section class="landingpage-contact">
+      <div class="landingpage-contact-inner">
         <div>
-          <p class="landingpage-questions-subtitle">Help & Contact</p>
+          <p class="landingpage-contact-subtitle">Help & Contact</p>
           <axa-heading rank="4" variant="secondary">Any question?<axa-heading>
         </div>
         <axa-button-link href="/contact" variant="inverted"
