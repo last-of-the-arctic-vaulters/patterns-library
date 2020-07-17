@@ -6,7 +6,7 @@ import styles from './index.scss';
 
 // imagesource="https://drive.google.com/uc?export=view&id=1CZAbIBfCiH0aRhMoFtpOT4wXCLSxnY-1"
 
-const story = storiesOf('Overview|Introduction', module);
+const story = storiesOf('Overview|Welcome', module);
 story.addParameters({
   knobs: { disabled: true },
   changelog: { disabled: true },
@@ -21,7 +21,7 @@ story.add('Welcome', () => {
   <style>${styles}</style>
   <axa-container>
     <axa-heading rank="1">AXA’s Design System 🚀</axa-heading>
-    <axa-text variant="size-3">
+    <axa-text variant="size-1">
       Welcome to the Design System of AXA Switzerland. Our Pattern Library
       provides components and tools to help product teams work more efficiently,
       and to make AXA’s applications more cohesive.
@@ -53,16 +53,17 @@ story.add('Welcome', () => {
     </axa-commercial-hero-banner>
     <img class="landingpage-commercial-hero-banner-image" src="https://drive.google.com/uc?export=view&id=1CZAbIBfCiH0aRhMoFtpOT4wXCLSxnY-1"><img>
     <axa-heading rank="2">Last releases</axa-heading>
-    </axa-container>
-    <section class="landingpage-contact">
-      <div class="landingpage-contact-inner">
-        <div>
-          <p class="landingpage-contact-subtitle">Help & Contact</p>
-          <axa-heading rank="4" variant="secondary">Any question?<axa-heading>
-        </div>
-        <axa-button-link href="/contact" variant="inverted"
+    <img class="landingpage-last-releases-image" src="https://drive.google.com/uc?export=view&id=1OWMDEOPROgBm8t8E5FhxtrkDJomfpx8T"><img>
+  </axa-container>
+  <section class="landingpage-contact">
+    <div class="landingpage-contact-inner">
+      <div>
+        <p class="landingpage-contact-subtitle">Help & Contact</p>
+        <axa-heading rank="4" variant="secondary">Any question?<axa-heading>
+          </div>
+          <axa-button-link href="/?path=/story/contact--contact" variant="inverted"
           >Get in touch</axa-button-link
-        >
+          >
       </div>
     </section>
   `;
@@ -70,5 +71,3 @@ story.add('Welcome', () => {
   render(template, wrapper);
   return wrapper;
 });
-story.add('Getting started', () => {});
-story.add('Structure approach', () => {});
