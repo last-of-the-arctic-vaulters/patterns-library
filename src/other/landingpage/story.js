@@ -17,12 +17,13 @@ story.addParameters({
 
 story.add('Welcome', () => {
   const wrapper = document.createElement('div');
+  wrapper.classList.add('landingpage-wrapper');
 
   const template = html`
     <style>
       ${styles}
     </style>
-    <axa-container>
+    <axa-container class="landingpage-content">
       <axa-heading rank="1">AXA’s Design System 🚀</axa-heading>
       <axa-text variant="size-1">
         Welcome to the Design System of AXA Switzerland. Our Pattern Library
