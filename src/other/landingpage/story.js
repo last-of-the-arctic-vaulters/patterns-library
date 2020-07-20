@@ -17,13 +17,13 @@ story.addParameters({
 
 story.add('Welcome', () => {
   const wrapper = document.createElement('div');
-  wrapper.classList.add('landingpage-wrapper');
+  wrapper.classList.add('accessory-story-wrapper');
 
   const template = html`
     <style>
       ${styles}
     </style>
-    <div class="landingpage-content">
+    <div class="accessory-story-content">
       <axa-container>
         <axa-heading rank="1">AXA’s Design System 🚀</axa-heading>
         <axa-text variant="size-1">
