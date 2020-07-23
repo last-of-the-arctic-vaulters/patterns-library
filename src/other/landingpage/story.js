@@ -46,14 +46,14 @@ story.add('Welcome', () => {
           slot="button"
         >
           <axa-button-link
-            href="https://axa.ch"
+            href="/?path=/story/guides-getting-started--getting-started"
             variant=""
             size="large"
             style="padding-right:25px;"
             >GET STARTED</axa-button-link
           >
           <axa-button-link
-            href="https://axa.ch"
+            href="https://github.com/axa-ch/patterns-library"
             variant="secondary"
             size="large"
             icon="upload"
