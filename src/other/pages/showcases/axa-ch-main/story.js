@@ -18,6 +18,7 @@ story.addParameters({
   readme: {
     sidebar: Readme,
   },
+  changelog: { disabled: true },
 });
 
 function getFirstChildOfEachAxaCustomElement() {
