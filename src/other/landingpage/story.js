@@ -63,12 +63,12 @@ story.add('Welcome', () => {
       </axa-commercial-hero-banner>
       <img
         class="landingpage-commercial-hero-banner-image"
-        src="https://drive.google.com/uc?export=view&id=1CZAbIBfCiH0aRhMoFtpOT4wXCLSxnY-1"
+        src="axa-design-illustration.png"
       /><img />
       <axa-heading rank="2" variant="secondary">Last releases</axa-heading>
       <img
         class="landingpage-last-releases-image"
-        src="https://drive.google.com/uc?export=view&id=1OWMDEOPROgBm8t8E5FhxtrkDJomfpx8T"
+        src="last-releases.png"
       /><img />
     </div>
     ${contact}
